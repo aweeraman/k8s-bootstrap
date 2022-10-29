@@ -181,6 +181,15 @@ k8s-node1    Ready    <none>          16m   v1.25.3
 k8s-node2    Ready    <none>          15m   v1.25.3
 ```
 
+## Test the cluster by deplying a container
+
+```
+$ ./6-run-nginx.sh
+```
+
+Open the URL in the browser with http://[worker-node]:[NodePort]. If you see
+the nginx landing page, everything working as it should.
+
 ## Open up network ports with ufw
 
 When using ufw, the following ports will need to be opened up on the
@@ -207,4 +216,5 @@ The following ports will need to be opened on the worker nodes:
 
 ## Reference
 
-[How to Install Kubernetes Cluster on Debian 11 with Kubeadm](https://www.linuxtechi.com/install-kubernetes-cluster-on-debian/) by Pradeep Kumar
+[How to Install Kubernetes Cluster on Debian 11 with Kubeadm](https://www.linuxtechi.com/install-kubernetes-cluster-on-debian/)
+by Pradeep Kumar
