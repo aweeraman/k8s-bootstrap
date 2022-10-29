@@ -27,6 +27,27 @@ sudo swapoff -a
 
 Remove entries in /etc/fstab for any swap volumes.
 
+## Install git and clone this repo
+
+```
+# apt update
+# apt install git
+# git clone https://github.com/aweeraman/k8s-bootstrap.git
+```
+
+## Load required kernel modules
+
+```
+cd k8s-bootstrap
+./1-load-kernel-modules.sh
+```
+
+## Set required kernel settings
+
+```
+./2-set-kernel-settings.sh
+```
+
 ## Open up network ports
 
 This step may not be needed initially.
@@ -51,25 +72,4 @@ The following ports will need to be opened on the worker nodes:
 # ufw allow 10250/tcp
 # ufw allow 30000:32767/tcp
 # ufw reload
-```
-
-## Install git and clone this repo
-
-```
-# apt update
-# apt install git
-# git clone https://github.com/aweeraman/k8s-bootstrap.git
-```
-
-## Load required kernel modules
-
-```
-cd k8s-bootstrap
-./load-kernel-modules.sh
-```
-
-## Set required kernel settings
-
-```
-./set-kernel-settings.sh
 ```
