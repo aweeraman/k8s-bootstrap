@@ -214,7 +214,7 @@ The following ports will need to be opened on the worker nodes:
 # ufw reload
 ```
 
-## Reference
+## Acknowledgements
 
 [How to Install Kubernetes Cluster on Debian 11 with Kubeadm](https://www.linuxtechi.com/install-kubernetes-cluster-on-debian/)
 by Pradeep Kumar
