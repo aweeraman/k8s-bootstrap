@@ -67,3 +67,9 @@ The following ports will need to be opened on the worker nodes:
 cd k8s-bootstrap
 ./load-kernel-modules.sh
 ```
+
+## Set required kernel settings
+
+```
+./set-kernel-settings.sh
+```
