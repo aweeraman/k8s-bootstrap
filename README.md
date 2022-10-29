@@ -48,6 +48,12 @@ cd k8s-bootstrap
 ./2-set-kernel-settings.sh
 ```
 
+## Install and configure containerd
+
+```
+./3-install-configure-containerd.sh
+```
+
 ## Open up network ports
 
 This step may not be needed initially.

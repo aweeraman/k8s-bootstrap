@@ -7,3 +7,7 @@ apt install -y containerd
 echo "Configuring containerd and setting the cgroup driver to systemd..."
 containerd config default | tee /etc/containerd/config.toml
 sed -i 's/SystemdCgroup = false/SystemdCgroup = true/' /etc/containerd/config.toml
+
+echo "Restarting and enabling containerd..."
+systemctl restart containerd
+systemctl enable containerd
